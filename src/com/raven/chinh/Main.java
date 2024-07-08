@@ -1,27 +1,29 @@
 
-package com.raven.main;
+package com.raven.chinh;
 
 import com.raven.component.Menu;
+import com.raven.form.MainForm;
 import java.awt.Color;
 import net.miginfocom.swing.MigLayout;
 
-public class Home extends javax.swing.JFrame {
+public class Main extends javax.swing.JFrame {
+    
+    private MigLayout lg;
+    private Menu menu;
+    private MainForm maifn;
 
-    public Home() {
+    public Main() {
         initComponents();
         setBackground(new Color(0, 0, 0, 0));
-        menu1.initMoving(Home.this);
-        init();
+        menu1.initMoving(Main.this);
     }
     
     public void init(){
         layout = new MigLayout("fill", "0[]0[100%, fill]0", "0[fill, top]0");
-        menu = new Menu();
+       
         
     }
     
-    
-
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -78,20 +80,21 @@ public class Home extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Home().setVisible(true);
+                new Main().setVisible(true);
             }
         });
     }
