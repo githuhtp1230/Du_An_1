@@ -1,7 +1,9 @@
 
 package com.raven.main;
 
+import com.raven.component.Menu;
 import java.awt.Color;
+import net.miginfocom.swing.MigLayout;
 
 public class Home extends javax.swing.JFrame {
 
@@ -9,6 +11,12 @@ public class Home extends javax.swing.JFrame {
         initComponents();
         setBackground(new Color(0, 0, 0, 0));
         menu1.initMoving(Home.this);
+        init();
+    }
+    
+    public void init(){
+        layout = new MigLayout("fill", "0[]0[100%, fill]0", "0[fill, top]0");
+        menu = new Menu();
         
     }
     
