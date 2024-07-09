@@ -21,7 +21,7 @@ public class Main extends javax.swing.JFrame {
     public void init(){
         layout = new MigLayout("fill", "0[]0[100%, fill]0", "0[fill, top]0");
        
-        a
+        ab
     }
     
     @SuppressWarnings("unchecked")
