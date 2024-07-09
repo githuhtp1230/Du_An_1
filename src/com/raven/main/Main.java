@@ -1,52 +1,89 @@
-
 package com.raven.main;
 
-import com.raven.component.Menu;
-import com.raven.form.MainForm;
+import com.raven.event.EvenMenuSelected;
+import com.raven.form.BanHangForm;
+import com.raven.form.HoaDonForm;
+import com.raven.form.KhachHangForm;
+import com.raven.form.NhanVienForm;
+import com.raven.form.SanPhamForm;
+import com.raven.form.ThongKeForm;
+import com.raven.form.VoucherForm;
 import java.awt.Color;
-import net.miginfocom.swing.MigLayout;
+import javax.swing.JComponent;
 
 public class Main extends javax.swing.JFrame {
-    
-    private MigLayout lg;
-    private Menu menu;
-    private MainForm maifn;
 
     public Main() {
         initComponents();
         setBackground(new Color(0, 0, 0, 0));
-        menu1.initMoving(Main.this);
+        menu.initMoving(Main.this);
+        menu.addEvent(new EvenMenuSelected() {
+            @Override
+            public void menuSelected(int menuIndex) {
+                System.out.println("Selected Index: " + menuIndex);
+                if (menuIndex == 0) {
+                    setForm(new BanHangForm());
+                } else if (menuIndex == 1) {
+                    setForm(new SanPhamForm());
+                } else if (menuIndex == 2) {
+                    setForm(new NhanVienForm());
+                } else if (menuIndex == 3) {
+                    setForm(new HoaDonForm());
+                } else if (menuIndex == 4) {
+                    setForm(new KhachHangForm());
+                } else if (menuIndex == 5) {
+                    setForm(new VoucherForm());
+                } else if (menuIndex == 6) {
+                    setForm(new ThongKeForm());
+                }
+            }
+        });
     }
     
     public void init(){
         layout = new MigLayout("fill", "0[]0[100%, fill]0", "0[fill, top]0");
     }
     
+    private void setForm(JComponent com) {
+        bg.removeAll();
+        bg.add(com);
+        bg.repaint();
+        bg.revalidate();
+    }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         panelBoder1 = new com.raven.swing.PanelBoder();
-        menu1 = new com.raven.component.Menu();
+        menu = new com.raven.component.Menu();
+        bg = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
         panelBoder1.setBackground(new java.awt.Color(255, 255, 255));
+        panelBoder1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
+
+        bg.setOpaque(false);
+        bg.setLayout(new java.awt.BorderLayout());
 
         javax.swing.GroupLayout panelBoder1Layout = new javax.swing.GroupLayout(panelBoder1);
         panelBoder1.setLayout(panelBoder1Layout);
         panelBoder1Layout.setHorizontalGroup(
             panelBoder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelBoder1Layout.createSequentialGroup()
-                .addComponent(menu1, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 816, Short.MAX_VALUE))
+                .addComponent(menu, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, 1071, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         panelBoder1Layout.setVerticalGroup(
             panelBoder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBoder1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(menu1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(panelBoder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(bg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, 620, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -88,6 +125,12 @@ public class Main extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -98,7 +141,8 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.raven.component.Menu menu1;
+    private javax.swing.JPanel bg;
+    private com.raven.component.Menu menu;
     private com.raven.swing.PanelBoder panelBoder1;
     // End of variables declaration//GEN-END:variables
 }

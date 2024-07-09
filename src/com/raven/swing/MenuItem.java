@@ -40,7 +40,7 @@ public class MenuItem extends javax.swing.JPanel {
 
         lblcon.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
-        lblName.setFont(new java.awt.Font("Segoe UI Variable", 3, 10)); // NOI18N
+        lblName.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         lblName.setForeground(new java.awt.Color(255, 255, 255));
         lblName.setText("Menu Name");
         lblName.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
@@ -50,11 +50,11 @@ public class MenuItem extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(20, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lblcon)
                 .addGap(10, 10, 10)
                 .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20))
+                .addGap(40, 40, 40))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

@@ -8,12 +8,12 @@ package com.raven.form;
  *
  * @author ADMIN
  */
-public class BanHang extends javax.swing.JPanel {
+public class HoaDonForm extends javax.swing.JPanel {
 
     /**
-     * Creates new form BanHang
+     * Creates new form HoaDon
      */
-    public BanHang() {
+    public HoaDonForm() {
         initComponents();
     }
 
