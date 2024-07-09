@@ -1,5 +1,5 @@
 
-package com.raven.chinh;
+package com.raven.main;
 
 import com.raven.component.Menu;
 import com.raven.form.MainForm;
@@ -20,8 +20,6 @@ public class Main extends javax.swing.JFrame {
     
     public void init(){
         layout = new MigLayout("fill", "0[]0[100%, fill]0", "0[fill, top]0");
-       
-        abc
     }
     
     @SuppressWarnings("unchecked")
