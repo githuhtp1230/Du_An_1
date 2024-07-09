@@ -9,10 +9,10 @@ package com.raven.form;
  *
  * @author ADMIN
  */
-public class ThongKe extends javax.swing.JPanel {
+public class VoucherForm extends javax.swing.JPanel {
 
-    /** Creates new form ThongKe */
-    public ThongKe() {
+    /** Creates new form Voucher */
+    public VoucherForm() {
         initComponents();
     }
 
