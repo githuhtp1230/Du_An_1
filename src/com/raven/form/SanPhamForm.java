@@ -3,13 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package com.raven.form;
+import repositories.sanpham.repo_chitietsanpham;
+import repositories.sanpham.repo_sanpham;
+import repositories.sanpham.repo_thuoctinhsanpham;
 
 /**
  *
  * @author ADMIN
  */
 public class SanPhamForm extends javax.swing.JPanel {
-
     /**
      * Creates new form SanPham
      */
@@ -26,27 +28,85 @@ public class SanPhamForm extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        menuBar = new javax.swing.JTabbedPane();
+        menuActivity1 = new javax.swing.JPanel();
+        menuActivity2 = new javax.swing.JPanel();
+        menuActivity3 = new javax.swing.JPanel();
 
-        jLabel1.setText("Thế Phương");
+        jMenu3.setText("File");
+        jMenuBar2.add(jMenu3);
+
+        jMenu4.setText("Edit");
+        jMenuBar2.add(jMenu4);
+
+        javax.swing.GroupLayout menuActivity1Layout = new javax.swing.GroupLayout(menuActivity1);
+        menuActivity1.setLayout(menuActivity1Layout);
+        menuActivity1Layout.setHorizontalGroup(
+            menuActivity1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1021, Short.MAX_VALUE)
+        );
+        menuActivity1Layout.setVerticalGroup(
+            menuActivity1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 532, Short.MAX_VALUE)
+        );
+
+        menuBar.addTab("Sản phẩm", menuActivity1);
+
+        javax.swing.GroupLayout menuActivity2Layout = new javax.swing.GroupLayout(menuActivity2);
+        menuActivity2.setLayout(menuActivity2Layout);
+        menuActivity2Layout.setHorizontalGroup(
+            menuActivity2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1021, Short.MAX_VALUE)
+        );
+        menuActivity2Layout.setVerticalGroup(
+            menuActivity2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 532, Short.MAX_VALUE)
+        );
+
+        menuBar.addTab("Chi tiết sản phẩm", menuActivity2);
+
+        javax.swing.GroupLayout menuActivity3Layout = new javax.swing.GroupLayout(menuActivity3);
+        menuActivity3.setLayout(menuActivity3Layout);
+        menuActivity3Layout.setHorizontalGroup(
+            menuActivity3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1021, Short.MAX_VALUE)
+        );
+        menuActivity3Layout.setVerticalGroup(
+            menuActivity3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 532, Short.MAX_VALUE)
+        );
+
+        menuBar.addTab("Thuộc tính sản phẩm", menuActivity3);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(menuBar)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(125, 125, 125)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(70, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(menuBar, javax.swing.GroupLayout.PREFERRED_SIZE, 556, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(117, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JPanel menuActivity1;
+    private javax.swing.JPanel menuActivity2;
+    private javax.swing.JPanel menuActivity3;
+    private javax.swing.JTabbedPane menuBar;
     // End of variables declaration//GEN-END:variables
 }
