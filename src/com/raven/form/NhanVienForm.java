@@ -310,8 +310,11 @@ public class NhanVienForm extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
+<<<<<<< HEAD
         jSeparator1.setBackground(new java.awt.Color(255, 255, 255));
 
+=======
+>>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 255, 102)));
 
@@ -343,7 +346,10 @@ public class NhanVienForm extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+<<<<<<< HEAD
         jScrollPane2.setBackground(new java.awt.Color(255, 255, 255));
+=======
+>>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
         jScrollPane2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(

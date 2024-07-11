@@ -26,6 +26,7 @@ public class KhachHangForm extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+<<<<<<< HEAD
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
@@ -331,10 +332,13 @@ public class KhachHangForm extends javax.swing.JPanel {
         ));
         jScrollPane2.setViewportView(tblKhachHang);
 
+=======
+>>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(1, 1, 1)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -418,5 +422,17 @@ public class KhachHangForm extends javax.swing.JPanel {
     private javax.swing.JPanel txtMa;
     private javax.swing.JTextField txtSDT;
     private javax.swing.JTextField txtSearch;
+=======
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+    }// </editor-fold>//GEN-END:initComponents
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+>>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
     // End of variables declaration//GEN-END:variables
 }
