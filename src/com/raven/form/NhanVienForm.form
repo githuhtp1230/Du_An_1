@@ -505,11 +505,14 @@
     </Container>
     <Component class="javax.swing.JSeparator" name="jSeparator1">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
       </Properties>
+=======
+>>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
 =======
 >>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
     </Component>
@@ -573,9 +576,12 @@
     <Container class="javax.swing.JScrollPane" name="jScrollPane2">
       <Properties>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
+=======
+>>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
 =======
 >>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
