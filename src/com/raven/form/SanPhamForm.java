@@ -35,8 +35,6 @@ public class SanPhamForm extends javax.swing.JPanel {
         menuActivity1 = new javax.swing.JPanel();
         menuActivity2 = new javax.swing.JPanel();
         menuActivity3 = new javax.swing.JPanel();
-<<<<<<< HEAD
-<<<<<<< HEAD
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -54,10 +52,6 @@ public class SanPhamForm extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-=======
->>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
-=======
->>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
 
         jMenu3.setText("File");
         jMenuBar2.add(jMenu3);
@@ -91,8 +85,6 @@ public class SanPhamForm extends javax.swing.JPanel {
 
         menuBar.addTab("Chi tiết sản phẩm", menuActivity2);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         jButton1.setText("Thêm");
 
         jButton2.setText("Sửa");
@@ -171,16 +163,10 @@ public class SanPhamForm extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-=======
->>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
-=======
->>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
         javax.swing.GroupLayout menuActivity3Layout = new javax.swing.GroupLayout(menuActivity3);
         menuActivity3.setLayout(menuActivity3Layout);
         menuActivity3Layout.setHorizontalGroup(
             menuActivity3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-<<<<<<< HEAD
-<<<<<<< HEAD
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, menuActivity3Layout.createSequentialGroup()
                 .addGap(44, 44, 44)
                 .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
@@ -247,18 +233,6 @@ public class SanPhamForm extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
-=======
-=======
->>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
-            .addGap(0, 1021, Short.MAX_VALUE)
-        );
-        menuActivity3Layout.setVerticalGroup(
-            menuActivity3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 532, Short.MAX_VALUE)
-<<<<<<< HEAD
->>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
-=======
->>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
         );
 
         menuBar.addTab("Thuộc tính sản phẩm", menuActivity3);
@@ -281,8 +255,6 @@ public class SanPhamForm extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -334,30 +306,12 @@ public class SanPhamForm extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
-=======
-=======
->>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenuBar jMenuBar2;
-<<<<<<< HEAD
->>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
-=======
->>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
     private javax.swing.JPanel menuActivity1;
     private javax.swing.JPanel menuActivity2;
     private javax.swing.JPanel menuActivity3;
     private javax.swing.JTabbedPane menuBar;
-<<<<<<< HEAD
-<<<<<<< HEAD
     private javax.swing.JRadioButton rdCoGiay;
     private javax.swing.JRadioButton rdKichThuoc;
     private javax.swing.JRadioButton rdMauSac;
-=======
->>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
-=======
->>>>>>> parent of 98bf31c (Hoang lam giao dien sp)
     // End of variables declaration//GEN-END:variables
 }
