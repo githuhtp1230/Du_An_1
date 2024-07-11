@@ -9,7 +9,7 @@ public class repo_mausac {
     public ArrayList<MauSac> loadListFromDb() {
         Connection sConn = DBConn.getConnection();
         // msởi tạo list nhân viên trống
-        List<mauSac> mauSacs = new ArrayList<mauSac>();
+        List<MauSac> mauSacs = new ArrayList<MauSac>();
         String query = "SELECT * FROM dbo.NhanVien";
         try {
             Statement stm = sConn.createStatement();

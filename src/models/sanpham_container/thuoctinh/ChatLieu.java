@@ -18,6 +18,9 @@ public class ChatLieu {
         this.trangThai = trangThai;
     }
 
+    public ChatLieu() {
+    }
+
     public String getIdChatLieu() {
         return idChatLieu;
     }
@@ -42,5 +45,4 @@ public class ChatLieu {
         this.trangThai = trangThai;
     }
 
-     
 }

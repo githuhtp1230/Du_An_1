@@ -10,6 +10,9 @@ public class XuatXu {
         this.trangThai = trangThai;
     }
 
+    public XuatXu() {
+    }
+
     public String getMaXuatXu() {
         return maXuatXu;
     }

@@ -10,6 +10,9 @@ public class CoGiay {
         this.tranThai = tranThai;
     }
 
+    public CoGiay() {
+    }
+
     public String getIdCoGiay() {
         return idCoGiay;
     }

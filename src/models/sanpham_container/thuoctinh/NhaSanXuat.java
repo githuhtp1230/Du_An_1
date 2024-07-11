@@ -10,6 +10,9 @@ public class NhaSanXuat {
         this.trangThai = trangThai;
     }
 
+    public NhaSanXuat() {
+    }
+
     public String getMaNSX() {
         return maNSX;
     }

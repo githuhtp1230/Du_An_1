@@ -11,6 +11,9 @@ public class KhoiLuong {
         this.trangThai = trangThai;
     }
 
+    public KhoiLuong() {
+    }
+
     public String getMaKhoiLuong() {
         return maKhoiLuong;
     }

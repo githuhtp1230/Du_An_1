@@ -10,6 +10,9 @@ public class HinhAnh {
         this.trangThai = trangThai;
     }
 
+    public HinhAnh() {
+    }
+
     public String getIdHinhAnh() {
         return idHinhAnh;
     }

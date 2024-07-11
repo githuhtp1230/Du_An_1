@@ -18,6 +18,9 @@ public class Hang {
         this.trangThai = trangThai;
     }
 
+    public Hang() {
+    }
+
     public String getIdHang() {
         return idHang;
     }
@@ -41,5 +44,5 @@ public class Hang {
     public void setTrangThai(boolean trangThai) {
         this.trangThai = trangThai;
     }
-    
+
 }

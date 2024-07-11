@@ -18,6 +18,9 @@ public class MauSac {
         this.trangThai = trangThai;
     }
 
+    public MauSac() {
+    }
+
     public String getIdMauSac() {
         return idMauSac;
     }
@@ -42,6 +45,4 @@ public class MauSac {
         this.trangThai = trangThai;
     }
 
-    
-    
 }
