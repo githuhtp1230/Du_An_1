@@ -22,7 +22,7 @@ public class repo_chatlieu implements interface_repo_thuoctinh {
     @Override
     public void add(Object x) {
         ChatLieu chatLieu = ((ChatLieu) x);
-        String query = querySQL.getInsertQuery("ChatLieu", "TenChatLieu", "TrangThai");
+        String query = querySQL.getInsertQuery("ChatLieu", "Loai", "TrangThai");
         try {
             PreparedStatement stm = sConn.prepareStatement(query);
             stm.setString(1, chatLieu.getLoai());
@@ -35,7 +35,7 @@ public class repo_chatlieu implements interface_repo_thuoctinh {
     @Override
     public void update(Object x) {
         ChatLieu chatLieu = ((ChatLieu) x);
-        String query = querySQL.getUpdateQuery("ChatLieu", chatLieu.getIdChatLieu(), "TenChatLieu", "TrangThai");
+        String query = querySQL.getUpdateQuery("ChatLieu", chatLieu.getIdChatLieu(), "Loai", "TrangThai");
         try {
             PreparedStatement stm = sConn.prepareStatement(query);
             stm.setString(1, chatLieu.getLoai());

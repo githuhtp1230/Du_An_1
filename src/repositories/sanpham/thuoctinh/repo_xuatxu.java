@@ -22,10 +22,10 @@ public class repo_xuatxu implements interface_repo_thuoctinh {
     @Override
     public void add(Object x) {
         XuatXu xuatXu = ((XuatXu) x);
-        String query = querySQL.getInsertQuery("XuatXu", "TenXuatXu", "TrangThai");
+        String query = querySQL.getInsertQuery("XuatXu", "NoiXuatXu", "TrangThai");
         try {
             PreparedStatement stm = sConn.prepareStatement(query);
-            stm.setString(1, xuatXu.getTenNuoc());
+            stm.setString(1, xuatXu.getNoiXuatXu());
             stm.setBoolean(2, xuatXu.isTrangThai());
             stm.executeUpdate();
         } catch (SQLException e) {
@@ -35,10 +35,10 @@ public class repo_xuatxu implements interface_repo_thuoctinh {
     @Override
     public void update(Object x) {
         XuatXu xuatXu = ((XuatXu) x);
-        String query = querySQL.getUpdateQuery("XuatXu", xuatXu.getIdXuatXu(), "TenXuatXu", "TrangThai");
+        String query = querySQL.getUpdateQuery("XuatXu", xuatXu.getIdXuatXu(), "NoiXuatXu", "TrangThai");
         try {
             PreparedStatement stm = sConn.prepareStatement(query);
-            stm.setString(1, xuatXu.getTenNuoc());
+            stm.setString(1, xuatXu.getNoiXuatXu());
             stm.setBoolean(2, xuatXu.isTrangThai());
             stm.executeUpdate();
         } catch (SQLException e) {
@@ -69,7 +69,7 @@ public class repo_xuatxu implements interface_repo_thuoctinh {
                 XuatXu ms = new XuatXu();
 
                 ms.setIdXuatXu(rs.getString("Id"));
-                ms.setTenNuoc(rs.getString("TenNuoc"));
+                ms.setNoiXuatXu(rs.getString("NoiXuatXu"));
                 ms.setTrangThai(rs.getBoolean("TrangThai"));
 
                 xuatXus.add(ms);

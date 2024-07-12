@@ -22,7 +22,7 @@ public class repo_nsx implements interface_repo_thuoctinh {
     @Override
     public void add(Object x) {
         NhaSanXuat nhaSanXuat = ((NhaSanXuat) x);
-        String query = querySQL.getInsertQuery("NhaSanXuat", "TenNhaSanXuat", "TrangThai");
+        String query = querySQL.getInsertQuery("NSX", "TenNSX", "TrangThai");
         try {
             PreparedStatement stm = sConn.prepareStatement(query);
             stm.setString(1, nhaSanXuat.getTenNSX());
@@ -35,7 +35,7 @@ public class repo_nsx implements interface_repo_thuoctinh {
     @Override
     public void update(Object x) {
         NhaSanXuat nhaSanXuat = ((NhaSanXuat) x);
-        String query = querySQL.getUpdateQuery("NSX", nhaSanXuat.getMaNSX(), "TenNhaSanXuat",
+        String query = querySQL.getUpdateQuery("NSX", nhaSanXuat.getMaNSX(), "TenNSX",
                 "TrangThai");
         try {
             PreparedStatement stm = sConn.prepareStatement(query);
