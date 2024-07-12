@@ -1,12 +1,12 @@
 package models.sanpham_container.thuoctinh;
 
 public class HinhAnh {
-    private String idHinhAnh, urlHinhAnh;
+    private String idHinhAnh, tenHinhAnh;
     private boolean trangThai;
 
-    public HinhAnh(String idHinhAnh, String urlHinhAnh, boolean trangThai) {
+    public HinhAnh(String idHinhAnh, String tenHinhAnh, boolean trangThai) {
         this.idHinhAnh = idHinhAnh;
-        this.urlHinhAnh = urlHinhAnh;
+        this.tenHinhAnh = tenHinhAnh;
         this.trangThai = trangThai;
     }
 
@@ -22,11 +22,11 @@ public class HinhAnh {
     }
 
     public String getTenHinhAnh() {
-        return urlHinhAnh;
+        return tenHinhAnh;
     }
 
-    public void setTenHinhAnh(String urlHinhAnh) {
-        this.urlHinhAnh = urlHinhAnh;
+    public void setTenHinhAnh(String tenHinhAnh) {
+        this.tenHinhAnh = tenHinhAnh;
     }
 
     public boolean isTrangThai() {

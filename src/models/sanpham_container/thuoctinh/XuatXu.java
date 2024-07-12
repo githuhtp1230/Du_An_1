@@ -1,11 +1,11 @@
 package models.sanpham_container.thuoctinh;
 
 public class XuatXu {
-    private String maXuatXu, tenNuoc;
+    private String idXuatXu, tenNuoc;
     private boolean trangThai;
 
-    public XuatXu(String maXuatXu, String tenNuoc, boolean trangThai) {
-        this.maXuatXu = maXuatXu;
+    public XuatXu(String idXuatXu, String tenNuoc, boolean trangThai) {
+        this.idXuatXu = idXuatXu;
         this.tenNuoc = tenNuoc;
         this.trangThai = trangThai;
     }
@@ -13,12 +13,12 @@ public class XuatXu {
     public XuatXu() {
     }
 
-    public String getMaXuatXu() {
-        return maXuatXu;
+    public String getIdXuatXu() {
+        return idXuatXu;
     }
 
-    public void setMaXuatXu(String maXuatXu) {
-        this.maXuatXu = maXuatXu;
+    public void setIdXuatXu(String idXuatXu) {
+        this.idXuatXu = idXuatXu;
     }
 
     public String getTenNuoc() {

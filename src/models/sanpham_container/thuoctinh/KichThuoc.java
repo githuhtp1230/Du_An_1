@@ -8,33 +8,38 @@ package models.sanpham_container.thuoctinh;
  *
  * @author Ca1
  */
-public class KichThuoc {
-    private String idChatLieu, loai;
-    private boolean trangThai;
 
-    public KichThuoc(String idChatLieu, String loai, boolean trangThai) {
-        this.idChatLieu = idChatLieu;
-        this.loai = loai;
-        this.trangThai = trangThai;
-    }
+/**
+ * KichThuoc
+ */
+public class KichThuoc {
+    private String idKichThuoc;
+    private int size;
+    private boolean trangThai;
 
     public KichThuoc() {
     }
 
-    public String getIdChatLieu() {
-        return idChatLieu;
+    public KichThuoc(String idKichThuoc, int size, boolean trangThai) {
+        this.idKichThuoc = idKichThuoc;
+        this.size = size;
+        this.trangThai = trangThai;
     }
 
-    public void setIdChatLieu(String idChatLieu) {
-        this.idChatLieu = idChatLieu;
+    public String getIdKichThuoc() {
+        return idKichThuoc;
     }
 
-    public String getLoai() {
-        return loai;
+    public void setIdKichThuoc(String idKichThuoc) {
+        this.idKichThuoc = idKichThuoc;
     }
 
-    public void setLoai(String loai) {
-        this.loai = loai;
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
     }
 
     public boolean isTrangThai() {

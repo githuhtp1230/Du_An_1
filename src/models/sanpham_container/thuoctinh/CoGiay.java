@@ -2,12 +2,12 @@ package models.sanpham_container.thuoctinh;
 
 public class CoGiay {
     private String idCoGiay, tenCoGiay;
-    private boolean tranThai;
+    private boolean trangThai;
 
-    public CoGiay(String idCoGiay, String tenCoGiay, boolean tranThai) {
+    public CoGiay(String idCoGiay, String tenCoGiay, boolean trangThai) {
         this.idCoGiay = idCoGiay;
         this.tenCoGiay = tenCoGiay;
-        this.tranThai = tranThai;
+        this.trangThai = trangThai;
     }
 
     public CoGiay() {
@@ -29,12 +29,12 @@ public class CoGiay {
         this.tenCoGiay = tenCoGiay;
     }
 
-    public boolean isTranThai() {
-        return tranThai;
+    public boolean isTrangThai() {
+        return trangThai;
     }
 
-    public void setTranThai(boolean tranThai) {
-        this.tranThai = tranThai;
+    public void setTrangThai(boolean trangThai) {
+        this.trangThai = trangThai;
     }
 
 }

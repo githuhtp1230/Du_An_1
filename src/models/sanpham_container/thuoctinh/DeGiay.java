@@ -1,11 +1,11 @@
 package models.sanpham_container.thuoctinh;
 
 public class DeGiay {
-    private String maDeGiay, tenDeGiay;
+    private String idDeGiay, tenDeGiay;
     private boolean trangThai;
 
-    public DeGiay(String maDeGiay, String tenDeGiay, boolean trangThai) {
-        this.maDeGiay = maDeGiay;
+    public DeGiay(String idDeGiay, String tenDeGiay, boolean trangThai) {
+        this.idDeGiay = idDeGiay;
         this.tenDeGiay = tenDeGiay;
         this.trangThai = trangThai;
     }
@@ -13,12 +13,12 @@ public class DeGiay {
     public DeGiay() {
     }
 
-    public String getMaDeGiay() {
-        return maDeGiay;
+    public String getIdDeGiay() {
+        return idDeGiay;
     }
 
-    public void setMaDeGiay(String maDeGiay) {
-        this.maDeGiay = maDeGiay;
+    public void setIdDeGiay(String idDeGiay) {
+        this.idDeGiay = idDeGiay;
     }
 
     public String getTenDeGiay() {

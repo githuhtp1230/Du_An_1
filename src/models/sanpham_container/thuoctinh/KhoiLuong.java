@@ -1,12 +1,12 @@
 package models.sanpham_container.thuoctinh;
 
 public class KhoiLuong {
-    private String maKhoiLuong;
-    private int khoiLuong;
+    private String idKhoiLuong;
+    private String khoiLuong;
     private boolean trangThai;
 
-    public KhoiLuong(String maKhoiLuong, int khoiLuong, boolean trangThai) {
-        this.maKhoiLuong = maKhoiLuong;
+    public KhoiLuong(String idKhoiLuong, String khoiLuong, boolean trangThai) {
+        this.idKhoiLuong = idKhoiLuong;
         this.khoiLuong = khoiLuong;
         this.trangThai = trangThai;
     }
@@ -14,19 +14,19 @@ public class KhoiLuong {
     public KhoiLuong() {
     }
 
-    public String getMaKhoiLuong() {
-        return maKhoiLuong;
+    public String getIdKhoiLuong() {
+        return idKhoiLuong;
     }
 
-    public void setMaKhoiLuong(String maKhoiLuong) {
-        this.maKhoiLuong = maKhoiLuong;
+    public void setIdKhoiLuong(String idKhoiLuong) {
+        this.idKhoiLuong = idKhoiLuong;
     }
 
-    public int getKhoiLuong() {
+    public String getTenKhoiLuong() {
         return khoiLuong;
     }
 
-    public void setKhoiLuong(int khoiLuong) {
+    public void setTenKhoiLuong(String khoiLuong) {
         this.khoiLuong = khoiLuong;
     }
 

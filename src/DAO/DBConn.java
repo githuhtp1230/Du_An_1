@@ -14,7 +14,7 @@ import java.sql.SQLException;
  *
  * @author TienTHM_1
  */
-public class DBConnect {
+public class DBConn {
     public static Connection getConnection(){
         Connection sConn = null;
         String strDbUrl = "jdbc:sqlserver://localhost:1433; "
